@@ -24,8 +24,8 @@
 
 ## 📷 Demonstração
 
-
-
+  <img width="1357" height="624" alt="Screenshot 2026-02-24 013439" src="https://github.com/user-attachments/assets/621d4a79-62ef-45a9-9236-ba79360ad593" />
+  
 ---
 
 ## 📖 Sobre o Projeto
