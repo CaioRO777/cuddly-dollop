@@ -1,50 +1,63 @@
-# cuddly-dollop
-Jogo tipo "Termo" (Projeto para o Curso).
+<h1 align="center">
+  🕵️ Jogo da Palavra Secreta
+</h1>
 
-🎯 Jogo da Palavra Secreta
-Projeto desenvolvido com HTML, CSS e JavaScript, inspirado em jogos de adivinhação como o Termo.
-O objetivo é adivinhar a palavra secreta dentro de um número limitado de tentativas.
+<p align="center">
+  <img src="https://img.shields.io/badge/Estado-Concluido-success?style=for-the-badge" alt="Estado do Projeto">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+</p>
 
-🚀 Funcionalidades
-Sorteio aleatório de palavras
-Sistema de tentativas (6 chances)
-Validação de entrada vazia
-Feedback visual de acerto ou erro
-Bloqueio do jogo ao vencer ou perder
-Botão para reiniciar a partida
-Interface simples e intuitiva
+<p align="center">
+  <strong>Um jogo de adivinhação focado em lógica e experiência do utilizador, com sistema de dicas inteligente.</strong>
+</p>
 
-🛠️ Tecnologias Utilizadas
-HTML5 → estrutura da aplicação
-CSS3 → estilização e layout
-JavaScript (Vanilla) → lógica do jogo e manipulação do DOM
+<p align="center">
+  <a href="#-sobre-o-projeto">Sobre</a> •
+  <a href="#-funcionalidades">Funcionalidades</a> •
+  <a href="#-o-que-aprendi">O que aprendi</a> •
+  <a href="#-como-executar">Como Executar</a>
+</p>
 
-🧠 Lógica do Jogo
-Uma palavra é escolhida aleatoriamente a partir de um array
-O jogador digita um palpite
-A cada tentativa:
-O sistema verifica se a palavra está correta
-Diminui o número de tentativas
-Exibe mensagens de erro ou sucesso
-O jogo termina ao acertar a palavra ou ao zerar as tentativas
+---
 
-📚 Aprendizados
-Neste projeto, pratiquei:
-Manipulação do DOM
-Uso de addEventListener
-Condições (if/else)
-Variáveis e arrays
-Lógica de controle de jogo
-Organização básica de arquivos (HTML, CSS e JS)
+## 📷 Demonstração
 
-🔧 Possíveis melhorias futuras
-Validação do tamanho da palavra digitada
-Exibir letras corretas (estilo Termo/Wordle)
-Adicionar teclado virtual
-Sistema de pontuação
-Melhorar o layout e responsividade
 
-👨‍💻 Autor
-Caio Oliveira
-Estudante de Desenvolvimento de Sistemas / ADS
-🔗 GitHub: github.com/CaioRO777
+
+---
+
+## 📖 Sobre o Projeto
+
+Este projeto foi desenvolvido como parte dos meus estudos no curso de **Análise e Desenvolvimento de Sistemas (ADS)**. Inspirado em jogos de lógica baseados em texto, o objetivo foi consolidar conceitos fundamentais de JavaScript Vanilla aplicados à construção de interfaces interativas e centradas no utilizador (UX).
+
+---
+
+## ✨ Funcionalidades
+
+- ✅ **Sistema de Dicas Inteligente:** Cada palavra sorteada exibe uma pista contextual e a contagem exata de letras, melhorando a jogabilidade.
+- ✅ Sorteio dinâmico a partir de um *Array de Objetos* usando `Math.random()`.
+- ✅ Sistema de controlo de tentativas (máximo de 6 erros).
+- ✅ Validação de entrada (impede palpites vazios e remove espaços em branco acidentais com `.trim()`).
+- ✅ **Acessibilidade:** Suporte à tecla "Enter" para confirmação rápida do palpite.
+- ✅ **UX Dinâmica:** O botão de "Jogar Novamente" só fica visível quando a partida termina (vitória ou derrota).
+
+---
+
+## 🧠 O que aprendi
+
+Nesta versão mais avançada do projeto, aprofundei os seguintes conceitos:
+
+* **Estruturas de Dados:** Evolução de um simples *Array* de *Strings* para um **Array de Objetos** `[{palavra, dica}]`, permitindo associar múltiplos dados a um único elemento.
+* **Manipulação de DOM Dinâmica:** Utilização de `innerHTML` para injetar texto formatado (como a contagem de letras com a tag `<small>`) diretamente na página.
+* **Event Listeners de Teclado:** Captura do evento `keypress` para permitir a jogabilidade sem necessidade de usar o rato.
+* **Ciclo de Vida da Aplicação:** Separação da lógica em funções puras e específicas (`iniciarJogo()`, `fazerJogada()`, `finalizarJogo()`), tornando o código mais limpo e profissional.
+
+---
+
+## 🚀 Como Executar o Projeto
+
+1. Clone este repositório:
+   ```bash
+   git clone (https://github.com/CaioRO777/cuddly-dollop.git)

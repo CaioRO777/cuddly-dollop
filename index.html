@@ -1,26 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogo da Palavra Secreta</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <h1>Jogo da Palavra Secreta</h1>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <p>Tente adivinhar a palavra (6 tentativas)</p>
+      <h1>🕵️ Jogo da Palavra Secreta</h1>
+      <p class="subtitle">Adivinhe a palavra (6 tentativas)</p>
 
-        <input type="text" id="inputPalpite" placeholder="Digite sua tentativa">
+      <p id="dicaTexto" class="dica"></p>
+      
+      <div class="input-group">
+        <input
+          type="text"
+          id="inputPalpite"
+          placeholder="Digite seu palpite"
+          autocomplete="off"
+        />
         <button id="btnTentar">Tentar</button>
+      </div>
 
-        <p id="resultado"></p>
-        <p id="tentativasRestantes"></p>
+      <p id="resultado"></p>
+      <p id="tentativasRestantes"></p>
 
-        <button id="btnReiniciar">Reiniciar</button>
+      <button id="btnReiniciar">Jogar Novamente</button>
     </div>
 
+    <footer
+      style="
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+        margin-top: auto;
+        font-family: Arial, sans-serif;
+      "
+    >
+      <p style="margin: 0; color: #f2f2f2">
+        Desenvolvido com dedicação por <strong>Caio Oliveira</strong> 👨‍💻
+      </p>
+      <a
+        href="https://www.linkedin.com/in/caio-oliveira-37b766345/"
+        target="_blank"
+        style="color: #4e73df; text-decoration: none; font-weight: bold"
+      >
+        Conecte-se comigo no LinkedIn!
+      </a>
+    </footer>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
